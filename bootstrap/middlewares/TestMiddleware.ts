@@ -4,8 +4,6 @@ import BaseMiddleware from '@/bootstrap/abstruction/BaseMiddleware'
 
 class TestMiddleware extends BaseMiddleware {
 
-    public app: any
-
     public async boot(context: Context, next: Next) {
 
         return context.json({
