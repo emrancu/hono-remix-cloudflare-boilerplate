@@ -12,7 +12,7 @@ mode = "smart"
 
 [[kv_namespaces]]
 binding = "kv"
-id = "7f2f379205be4f75bda4ac3048d19006"
+id = "YOUR_KV_NAMESPACE_ID"
 
 # [[d1_databases]]
 # binding = "DB"
