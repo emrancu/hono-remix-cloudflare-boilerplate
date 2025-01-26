@@ -109,6 +109,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
       };
       ```
 
+
 ---
 
 ## Running the Application
@@ -136,6 +137,33 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 - **`npm run deploy`**: Deploys the application to Cloudflare Workers.
 
 ---
+
+
+
+
+### If you don't need KV, then just comment out the `KvSession` middleware from
+`config/app.ts`:
+
+```ts
+middlewares: [
+   // KvSession,
+   StaticAssetsRegister,
+   RemixMiddleware,
+   RemixRegister,
+]
+```
+### If you don't need Remix route middleware, then just comment out the `RemixMiddleware` middleware from
+`config/app.ts`:
+
+```ts
+middlewares: [
+    KvSession,
+   StaticAssetsRegister,
+  // RemixMiddleware,
+   RemixRegister,
+]
+```
+--- 
 
 ## License
 
