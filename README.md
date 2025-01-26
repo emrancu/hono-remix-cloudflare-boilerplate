@@ -125,13 +125,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 
 ### **5. Environment Configuration**
 - Easily manage environment variables in `config/app.ts`.
-- Example:
-  ```typescript
-  export const ENV = {
-      KV_NAMESPACE: process.env.KV_NAMESPACE,
-      SESSION_SECRET: process.env.SESSION_SECRET,
-  };
-  ```
+ 
 
 ### **6. Static Assets**
 - Serve static assets from the `public` folder.
