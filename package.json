@@ -1,6 +1,17 @@
 {
   "name": "hono-remix-cloudflare-boilerplate",
+  "version": "1.0.0",
   "description": "A ready-to-use template for building scalable serverless applications on Cloudflare Workers with Hono and Remix. Features middleware for Remix routes, Cloudflare KV integration (data & sessions), and a modular structure. Includes example API routes, Remix pages, and utilities for faster development.",
+  "author": "AL Emran <https://x.com/ALEMRANCU>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emrancu/hono-remix-cloudflare-boilerplate"
+  },
+  "homepage": "https://github.com/emrancu/hono-remix-cloudflare-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/emrancu/hono-remix-cloudflare-boilerplate/issues"
+  },
   "private": true,
   "sideEffects": false,
   "type": "module",
