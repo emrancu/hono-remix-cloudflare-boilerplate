@@ -80,7 +80,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 ## **Key Features in Detail**
 
 ### **1. Hono API Routes**
-- Define API routes using Hono's lightweight router.
+- Define API routes using Hono's lightweight router at `routes/api.ts`.
 - Example API route:
   ```typescript
   import { Hono } from 'hono';
@@ -92,7 +92,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
   ```
 
 ### **2. Remix Pages and Routes**
-- Simplified route management for Remix pages.
+- Simplified route management for Remix pages at `routes/remix.ts`.
 - Example Remix route:
   ```javascript
   Route('/', './app/remix/pages/Index.tsx');
@@ -104,10 +104,14 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 - Add custom middleware for Remix or Hono routes.
 - Example middleware:
   ```typescript
-  export const TestMiddleware = async (ctx, next) => {
-      console.log('Middleware triggered');
-      await next();
-  };
+    class TestMiddleware extends BaseMiddleware {
+  
+        public async boot(context: Context, next: Next) {
+          await next()
+        }
+    }
+  
+    export default TestMiddleware;
   ```
 
 ### **4. Cloudflare KV Integration**
