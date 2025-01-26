@@ -56,6 +56,65 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 
 ---
 
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/emrancu/hono-remix-cloudflare-boilerplate
+   cd hono-remix-cloudflare-boilerplate
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Demo
+
+Check out the live demo: [https://hono-remix-cloudflare-boilerplate.pages.dev](https://hono-remix-cloudflare-boilerplate.pages.dev)
+
+---
+
+## Support
+
+If you find this project helpful, please consider giving it a ⭐️ **Star on GitHub** and following me on **Twitter** for updates and more projects:
+
+- [⭐️ Star on GitHub](https://github.com/emrancu/hono-remix-cloudflare-boilerplate)
+- [🐦 Follow me on Twitter](https://x.com/ALEMRANCU)
+
+Your support motivates me to keep building and sharing open-source projects! 🚀
+
+
+## Contributions Welcome
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your commit message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a **Pull Request** and describe your changes.
+
+For major changes, please open an issue first to discuss what you'd like to add or improve.
+
+
 ## **Key Features in Detail**
 
 ### **1. Hono API Routes**
@@ -151,3 +210,5 @@ This project is licensed under the **MIT License**. Feel free to use, modify, an
 ---
 
 This boilerplate is designed to help you quickly build and deploy scalable serverless applications on Cloudflare Workers with Hono and Remix. Happy coding! 🚀
+
+ 
