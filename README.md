@@ -35,7 +35,6 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
 ## **Project Structure**
 
 ```plaintext
-.
 ├── app
 │   ├── hono-api       # API controllers for Hono routes
 │   ├── remix          # Remix pages and components
