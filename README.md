@@ -124,7 +124,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
   ```
 
 ### **5. Environment Configuration**
-- Easily manage environment variables in `config/app.ts`.
+- Easily manage environment variables/config in `config/app.ts`.
  
 
 ### **6. Static Assets**
