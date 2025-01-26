@@ -20,6 +20,6 @@ Route('/kv', './app/remix/pages/KV.tsx');
 
 Route('/protected-area', () => {
 
-    Route('/json-api/:name?', 'app/remix/pages/JsonApi.ts');
+    Route('/json-api/:name', 'app/remix/pages/JsonApi.ts');
 
 }, ['@/bootstrap/middlewares/TestMiddleware']);

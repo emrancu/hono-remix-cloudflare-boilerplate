@@ -79,7 +79,7 @@ A boilerplate for building scalable serverless apps on Cloudflare Workers with H
     
     Route('/protected-area', () => {
     
-        Route('/json-api/:name?', 'app/remix/pages/JsonApi.ts');
+        Route('/json-api/:name', 'app/remix/pages/JsonApi.ts');
     
     }, ['@/bootstrap/middlewares/TestMiddleware']);
     ```
