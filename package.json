@@ -1,0 +1,44 @@
+{
+  "name": "hono-remix-cloudflare-boilerplate",
+  "description": "An advanced boilerplate for Cloudflare Workers combining Hono and Remix frameworks. This setup features modular routing with middleware support, KV storage integration, and edge-optimized server-side rendering. Includes example Hono API routes, Remix pages, and a well-organized file structure to kickstart scalable serverless applications on Cloudflare.",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "deploy": "npm run build && wrangler pages deploy",
+    "dev": "remix vite:dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "start": "wrangler pages dev ./build/client",
+    "typecheck": "tsc",
+    "typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@instantdb/react": "^0.14.27",
+    "@remix-run/cloudflare": "^2.15.2",
+    "@remix-run/cloudflare-pages": "^2.15.2",
+    "@remix-run/react": "^2.15.2",
+    "hono": "^4.6.8",
+    "isbot": "^5.1.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remix-vite": "^0.3.1"
+  },
+  "devDependencies": {
+    "@hono/eslint-config": "^1.0.2",
+    "@hono/vite-cloudflare-pages": "^0.4.2",
+    "@hono/vite-dev-server": "^0.16.0",
+    "@remix-run/dev": "^2.15.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^9.13.0",
+    "remix-hono": "^0.0.16",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-tsconfig-paths": "^5.1.4",
+    "wrangler": "^3.83.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

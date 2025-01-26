@@ -1,0 +1,19 @@
+name = "hono-remix-cloudflare-boilerplate"
+compatibility_date = "2024-10-31"
+pages_build_output_dir = "./build/client"
+
+
+[vars]
+SECRET = "12086fb500fc4bafae7d660773b554c6"
+SESSION_DRIVER = "kv"
+
+[placement]
+mode = "smart"
+
+[[kv_namespaces]]
+binding = "kv"
+id = "7f2f379205be4f75bda4ac3048d19006"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
