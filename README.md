@@ -1,8 +1,7 @@
  
 # Hono + Remix Cloudflare Boilerplate
 
-An advanced boilerplate to build serverless applications on Cloudflare Workers using Hono and Remix. This setup supports modular routing with middleware, KV storage integration (also as Session), and edge-optimized server-side rendering. It’s designed to help you quickly kickstart scalable and efficient applications on Cloudflare.
-
+A boilerplate for building scalable serverless apps on Cloudflare Workers with Hono and Remix. Key features include middleware support for Remix routes, seamless Cloudflare KV storage (also for Session) integration. Comes with example API routes, Remix pages, and a clean, modular file structure for effortless development.
 ## Features
 
 - **Hono Framework**: For API routes and middleware handling.
