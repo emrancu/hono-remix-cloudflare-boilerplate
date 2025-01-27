@@ -21,7 +21,7 @@ class RouteBuilder {
     if (typeof fileOrCallback === 'string') {
       this.routes.push({
         path: currentPath,
-        file: fileOrCallback,
+        file: this.convertPath(fileOrCallback),
         middlewares: currentMiddlewares
       });
     } else {
@@ -31,6 +31,11 @@ class RouteBuilder {
       this.parentMiddlewares.pop();  // Pop after children are processed
       this.parentPaths.pop();
     }
+  }
+
+  private convertPath(path: string): string
+  {
+    return path.replace(/^(\.?\/)?app\/remix\//, '');
   }
 
   private buildFullPath(path: string): string {
