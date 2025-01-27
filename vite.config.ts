@@ -6,6 +6,7 @@ import { cloudflareDevProxyVitePlugin } from "@remix-run/dev/dist/vite/cloudflar
 import {DefineRouteFunction} from '@remix-run/dev/dist/config/routes'
 import {  getSimpleRoutes, getRoutes} from './bootstrap/supports/RouteManager'
 import path from "path";
+import tailwindcss from "@tailwindcss/vite";
 
 async function defineAppRoutes(route: DefineRouteFunction) {
 
@@ -16,11 +17,11 @@ async function defineAppRoutes(route: DefineRouteFunction) {
     })
 }
 
-
 export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname),
+      "@": path.resolve(__dirname, './'),
+      "@remix": path.resolve(__dirname, './app/remix'),
     },
   },
   ssr: {
@@ -29,9 +30,10 @@ export default defineConfig({
     },
   },
   plugins: [
+    tailwindcss(),
     cloudflareDevProxyVitePlugin(),
     remix({
-      appDirectory: "./",
+      appDirectory: "./app/remix",
       future: {
         v3_fetcherPersist: true,
         v3_lazyRouteDiscovery: true,

@@ -14,6 +14,8 @@ import {Route} from '../bootstrap/supports/RouteManager'
 
 
 Route('/', './app/remix/pages/Index.tsx');
+Route('/login', './app/remix/pages/Login.tsx');
+Route('/register', './app/remix/pages/Register.tsx');
 
 Route('/kv-session', './app/remix/pages/Session.tsx');
 Route('/kv', './app/remix/pages/KV.tsx');
